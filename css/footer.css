@@ -1,49 +1,83 @@
-.footer{
-    background: #000000;
+.footer {
+  background: #000000;
 }
 
-.footer-container{
-    max-width: 1200px;
-    padding: 120px 20px 60px 20px;
-    margin: 0 auto;
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    gap: 100px;
-    align-items: center;
-    color: #ffffff;
+.footer-container {
+  max-width: 1200px;
+  padding: 120px 20px 60px 20px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 100px;
+  align-items: center;
+  color: #ffffff;
 }
 
-.footer-texto{
+.footer-texto {
+  font-size: 1.5rem;
+  line-height: 1.33;
+  color: #cccccc;
+}
+
+.footer-contato li {
+  font-weight: bold;
+  font-size: 2.25rem;
+  line-height: 1.1;
+  color: #ffffff;
+  margin-bottom: 35px;
+  right: -250px;
+  bottom: -41px;
+  position: relative;
+}
+
+.footer-contato a {
+  color: #ffffff;
+  text-decoration: none;
+}
+
+.footer-contato a#email::before {
+  display: inline-block;
+  content: "";
+  width: 100px;
+  height: 55px;
+  background: url(../img/email-8-svgrepo-com.svg) no-repeat center center;
+  position: absolute;
+  left: -88px;
+  top: -9px;
+}
+.footer-contato a#linkedin::before {
+  display: inline-block;
+  content: "";
+  width: 75px;
+  height: 75px;
+  background: url(../img/linkedin-svgrepo-com.svg) no-repeat center center;
+  position: absolute;
+  left: -76px;
+  top: -19px;
+}
+.footer-contato a#wpp::before {
+  display: inline-block;
+  content: "";
+  width: 100px;
+  height: 60px;
+  background: url(../img/whatsapp-fill-svgrepo-com.svg) no-repeat center center;
+  position: absolute;
+  left: -90px;
+  top: -10px;
+}
+
+.footer-copy {
+  font-size: 1.25rem;
+  color: #8f8f8f;
+  grid-column: 1 / -1;
+}
+
+@media (max-width: 800px) {
+  .footer-container {
+    grid-template-columns: 1fr;
+    gap: 40px;
+  }
+  .footer-contato li {
     font-size: 1.5rem;
-    line-height: 1.33;
-    color: #cccccc;
-}
-
-.footer-contato li{
-    font-weight: bold;
-    font-size: 2.25rem;
-    line-height: 1.1;
-    color: #ffffff;
-    margin-bottom: 30px;
-
-}
-
-.footer-contato a{
-    color: #ffffff;
-}
-
-.footer-copy{
-    font-size: 1.25rem;
-    color: #8f8f8f;
-    grid-column: 1 / -1;
-}
-
-@media(max-width: 800px){
-    .footer-container{
-        grid-template-columns: 1fr;
-        gap: 40px;
-    }
-    .footer-contato li{
-        font-size: 1.5rem;
-    }
+  }
 }
