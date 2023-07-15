@@ -79,5 +79,8 @@
   }
   .footer-contato li {
     font-size: 1.5rem;
+    max-width: 70px;
+    right: -70px;
+    bottom: -10px;
   }
 }

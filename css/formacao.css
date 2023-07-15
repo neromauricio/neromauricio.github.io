@@ -141,10 +141,36 @@
     color: #ffffff;
   }
   .formacao-texto {
-    font-size: 1.25rem;
+    font-size: 1.125rem;
   }
   .formacao-extra h3::before {
     position: initial;
     margin-bottom: 10px;
+  }
+  .faculdade-lista {
+    gap: 10px;
+  }
+  .cursos li {
+    width: 95%;
+  }
+
+  .faculdade li {
+    width: 120px;
+  }
+
+  .faculdade-curso {
+    font-size: 1rem;
+  }
+}
+
+@media (max-width: 380px) {
+  .faculdade-lista {
+    gap: 8px;
+  }
+  .faculdade-curso {
+    font-size: 0.875rem;
+  }
+  .faculdade-instituicao {
+    font-size: 0.875rem;
   }
 }
